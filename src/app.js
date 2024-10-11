@@ -7,7 +7,9 @@ app.use(express.json());  // Para lidar com JSON nas requisições
 // Rotas
 app.use('/api/images', imageRoutes);
 
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
+
+

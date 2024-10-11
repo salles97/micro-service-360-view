@@ -9,10 +9,10 @@ const calculateAngle = (pontoImagem, pontoTestada) => {
     // Calcular o ângulo em radianos
     const angleRadians = Math.atan2(deltaY, deltaX);
     
-    console.log(angleRadians)
+    // console.log(angleRadians)
     // Converter para graus
     let angleDegrees = (angleRadians * 180) / Math.PI;
-    console.log(angleDegrees)
+    // console.log(angleDegrees)
     // Ajustar o ângulo para ficar entre 0 e 360 graus
     if (angleDegrees < 0) {
         angleDegrees += 360;
